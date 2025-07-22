@@ -9,9 +9,9 @@ next_player = True
 current_price = 0
 
 while next_player:
-    name = input("Whats yor name?\n")
-    price = int(input("What´s your bide price\n"))
-    next = input("Next biter? Yes or No\n").lower()
+    name = input("What is your name?\n")
+    price = int(input("What is your bid\n"))
+    next = input("Are there any other bidders? Type 'yes' or 'no'\n").lower()
     print("\n" * 20)
 
     if current_price < price:
