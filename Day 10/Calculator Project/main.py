@@ -1,3 +1,4 @@
+import art
 def add(n1, n2):
     return n1 + n2
 
@@ -17,6 +18,25 @@ operations = {
     "/": divide,
 }
 
-print(operations["*"](4,8))
+print(art.logo)
+
+go = True
+
+while go:
+    first_numer =int(input("First number"))
+    operator = input("type a mathematical operatora choice of '+', '-' , '*'  or  '/'")
+    seond_numer =int(input("Second number"))
+
+    result = operations[operator](first_numer, seond_numer)
+    print(result)
+
+    continu = input("Do you want to continue whit the previus resolut? (yes or no)")
+    if continu == "yes":
+        operator = input("type a mathematical operatora choice of '+', '-' , '*'  or  '/'")
+        seond_numer = int(input("Second number"))
+
+        result = operations[operator](result, seond_numer)
+        print(result)
+
 
 
