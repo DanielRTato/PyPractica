@@ -1,13 +1,13 @@
 import art
 import random
-print("\n * 20")
+print("\n" * 20)
 print(art.logo)
 
 print("Welcome to the Number Guessing Game!")
 print("I´m thinking of a number between 1 and 100.")
 
 random_number = random.randint(1,100)
-difficulty = input("Choose a difficulty. Type 'easy' or 'hard'\n ")
+difficulty = input("Choose a difficulty. Type 'easy' or 'hard'\n ").lower()
 
 
 def game(lives):
