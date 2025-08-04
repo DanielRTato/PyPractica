@@ -17,7 +17,7 @@ for tutle_i in range(0,6):
 screen = Screen()
 screen.setup(500, 400)
 user_bet = screen.textinput("Make your bet", "Which turtle will win the rece? Enter a color: ")
-print(user_bet) # for testing
+print(user_bet) # for testingg
 
 if user_bet:
     is_race_on = True
