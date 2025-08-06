@@ -5,7 +5,7 @@ from food import Food
 from scoreboard import Scoreboard
 
 screen = Screen()
-screen.setup(600, 600)
+screen.setup(600, 500)
 screen.bgcolor("black")
 screen.title("My Snake Game")
 screen.tracer(0)
@@ -29,6 +29,7 @@ while game_is_on:
 
     if snake.head.distance(food) < 15:
         food.refresh()
+        score.increase_score()
 
 
 
