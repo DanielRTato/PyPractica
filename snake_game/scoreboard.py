@@ -11,13 +11,14 @@ class Scoreboard(Turtle):
         self.color("white")
         self.penup()
         self.goto(0, 220)
-        self.write(f"Score: {self.score} ", align="ALIGNMENT", font=FONT)
+        self.write(f"Score: {self.score} ", align=ALIGNMENT, font=FONT)
 
     def update_scoreborard(self):
         self.write(f"Score: {self.score} ", align="center", font=("Arial", 24, "normal"))
 
     def game_over(self):
-        self.write("Game over", ALIGNMENT, FONT)
+        self.goto(0,0)
+        self.write("Game over", align=ALIGNMENT, font=FONT)
 
 
     def increase_score(self):
